@@ -29,7 +29,43 @@
 }
 
 .section1 {
-    max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 70px;
+  gap: 40px;
+}
+
+.left-text {
+  flex: 1;
+  text-align: left;
+}
+
+.right-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-img img {
+  width: 300px;
+  max-width: 100%;
+}
+
+/* Optional for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .section1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .right-img {
+    margin-top: 20px;
+  }
+
+  .left-text {
+    text-align: center;
+  }
 }
 
 nav ul a {
